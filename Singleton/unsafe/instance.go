@@ -1,4 +1,4 @@
-package main
+package unsafe
 
 // 建立私有变量
 var instance *singleton
@@ -9,7 +9,7 @@ type singleton struct{
 }
 
 // 获取实例方法
-func getInstance() *singleton{
+func GetInstance() *singleton{
 	if instance == nil{
 		instance = new(singleton)
 	}

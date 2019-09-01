@@ -1,9 +1,10 @@
 package unsafe
+// 此写法非线程安全
 
 // 建立私有变量
 var instance *singleton
 
-// 结构体替代
+// 单例结构体
 type singleton struct{
 	Name string
 }

@@ -12,6 +12,7 @@ type singleton struct {
 }
 
 func GetInstance() *singleton{
+	//只会执行一次
 	once.Do(func() {
 		instance = &singleton{}
 	})

@@ -1,12 +1,12 @@
 package main
 
 import (
-	"GoDesignPattern/Factory/pkg"
 	"fmt"
+	"testing"
 )
 
-func main()  {
-	payment,err := pkg.GetPaymentMethod(pkg.Cash)
+func TestFactory(t *testing.T)  {
+	payment,err := GetPaymentMethod(Cash)
 	if err != nil{
 		fmt.Printf("A payment method of type 'Cash' must Exist")
 	}
